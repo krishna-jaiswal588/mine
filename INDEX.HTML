@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I’ve Always Loved You</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="theme1">
+  <!-- Parallax Background -->
+  <div class="parallax"></div>
+
+  <div class="container">
+    <h1 class="pulse section-appear typing">I’ve always loved you.</h1>
+    <p class="section-appear">
+      Even when I said nothing, my heart was full of words for you.<br>
+      I stayed. I cared. I never stopped loving you.<br><br>
+      You were my first thought every morning, and my last every night.<br>
+      I didn’t ask for anything… just for you to feel what I couldn’t say.<br>
+      My love was silent, but it was screaming inside me.<br><br>
+      All these years, I’ve waited for the moment you’d see the truth in my eyes.<br>
+      The truth that I never walked away, never gave up — I stayed because I loved you.<br><br>
+      But you never looked back. And still, I remained.<br><br>
+      I waited through every storm, every silence — believing that one day, you’d hear my heart.<br>
+      But you never heard it. Instead, you walked away.<br><br>
+      And now, I’m left with only these words — words I can’t say to you anymore.
+    </p>
+    <a href="page2.html"><button class="shake">Next</button></a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      let sections = document.querySelectorAll('.section-appear');
+      sections.forEach(function(section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

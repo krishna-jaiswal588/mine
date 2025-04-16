@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* KEYFRAME ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes typingEffect {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes backgroundEffect {
+  0% { background-color: #f7d0d0; }
+  50% { background-color: #f5a6a6; }
+  100% { background-color: #f7d0d0; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* HEADINGS */
+h1.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* CONTAINER */
+.container {
+  text-align: center;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #a2c2e3;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+button:hover {
+  background-color: #8f9db1;
+  transform: scale(1.1);
+}
+
+/* PARAGRAPHS */
+p {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  line-height: 1.7;
+  animation: slideUp 1s ease-out;
+}
+
+/* THEME BACKGROUNDS FOR EACH PAGE */
+body.theme1 {
+  background-color: #ffdde1;
+  animation: backgroundEffect 5s infinite alternate;
+}
+
+body.theme2 {
+  background-color: #d6e4ff;
+  animation: backgroundEffect 5s infinite alternate;
+}
+
+body.theme3 {
+  background-color: #f3e1f0;
+  animation: backgroundEffect 5s infinite alternate;
+}
+
+body.theme4 {
+  background-color: #fff6e5;
+  animation: backgroundEffect 5s infinite alternate;
+}
+
+body.theme5 {
+  background-color: #d1f7e5;
+  animation: backgroundEffect 5s infinite alternate;
+}
+
+/* SCROLL EFFECT (slide-up on scroll) */
+.section-appear {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease;
+}
+
+.section-appear.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TYPING EFFECT */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  animation: typingEffect 3s steps(40) 1s forwards;
+}
+
+/* PARALLAX BACKGROUND */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+  background: url('your-image.jpg') no-repeat center center fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+/* SHAKE EFFECT (for buttons) */
+.shake {
+  animation: shake 0.5s ease-out;
+}

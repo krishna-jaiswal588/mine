@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Waited… And Waited</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="theme2">
+  <div class="parallax"></div>
+
+  <div class="container">
+    <h1 class="pulse section-appear typing">I waited… and waited.</h1>
+    <p class="section-appear">
+      I thought you'd see me one day — the way I saw you every day.<br>
+      But time kept moving, and you never looked back.<br><br>
+      Every message you didn’t send… every moment you didn’t notice — I noticed.<br>
+      I kept believing you’d turn around.<br>
+      I was always there, quietly holding on while pretending I wasn’t hurting.<br><br>
+      But the waiting started to feel endless. The silence, suffocating.<br>
+      I waited for a call that never came, a gesture that never happened.<br><br>
+      And I began to wonder — does love require silence? Or does it demand to be heard?<br><br>
+      I waited for you to love me back in the way I needed.<br>
+      But every time I waited, my heart broke a little more.<br><br>
+      And now, I’m just exhausted. I still love you, but I can’t keep waiting.
+    </p>
+    <a href="index.html"><button class="shake">Back</button></a>
+    <a href="page3.html"><button class="shake">Next</button></a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      let sections = document.querySelectorAll('.section-appear');
+      sections.forEach(function(section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

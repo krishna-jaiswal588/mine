@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Still Holding On</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="theme5">
+  <div class="parallax"></div>
+
+  <div class="container">
+    <h1 class="pulse section-appear typing">Still holding on.</h1>
+    <p class="section-appear">
+      After everything, I’m still here — because my heart never learned to stop loving you.<br>
+      I’ve cried, I’ve broken, I’ve questioned everything.<br><br>
+      But even in my weakest moments, my heart still whispers your name.<br>
+      You were never just someone to me — you were everything.<br><br>
+      I don’t know what the future holds, but I know this: I’ve loved you with all of me.<br>
+      And no matter how tired I get, that love won’t just disappear.<br><br>
+      I’m not letting go. Not yet. Maybe not ever.<br>
+      I’ll keep holding on — even if it’s in silence.
+    </p>
+    <a href="page4.html"><button class="shake">Back</button></a>
+    <a href="index.html"><button class="shake">Start Over</button></a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      let sections = document.querySelectorAll('.section-appear');
+      sections.forEach(function(section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

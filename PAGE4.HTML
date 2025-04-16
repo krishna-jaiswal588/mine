@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Am Exhausted</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="theme4">
+  <div class="parallax"></div>
+
+  <div class="container">
+    <h1 class="pulse section-appear typing">I am exhausted.</h1>
+    <p class="section-appear">
+      I gave everything I had, but it was never enough.<br>
+      I waited, I hoped, I loved — but it still feels like I’m standing alone.<br><br>
+      My heart still holds on, even when my soul feels tired.<br>
+      I never wanted to lose you — not then, not now, not ever.<br><br>
+      But it’s getting harder to breathe through the silence.<br>
+      I keep carrying this love like it’s all I have left.<br><br>
+      I'm not ready to let go. I don't think I ever will.<br>
+      I just wish… you could see how much this is hurting me.<br><br>
+      I’m tired — not of loving you, but of feeling like I’m the only one who does.
+    </p>
+    <a href="page3.html"><button class="shake">Back</button></a>
+    <a href="page5.html"><button class="shake">Next</button></a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      let sections = document.querySelectorAll('.section-appear');
+      sections.forEach(function(section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

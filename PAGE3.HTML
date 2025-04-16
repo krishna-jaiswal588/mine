@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Was Invisible</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="theme3">
+  <div class="parallax"></div>
+
+  <div class="container">
+    <h1 class="pulse section-appear typing">I was invisible to you.</h1>
+    <p class="section-appear">
+      I stood right in front of you, but you never saw me.<br>
+      I spoke my heart, but you didn’t hear it.<br><br>
+      You were too busy with your life, to see mine crumbling.<br>
+      I was always there, waiting… but you never looked.<br><br>
+      The hardest part was pretending everything was fine when inside, I was breaking.<br>
+      You were my everything, but I was nothing to you.<br><br>
+      I waited and waited, hoping one day you’d notice.<br>
+      But I was invisible. A shadow in the background of your life.
+    </p>
+    <a href="page2.html"><button class="shake">Back</button></a>
+    <a href="page4.html"><button class="shake">Next</button></a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      let sections = document.querySelectorAll('.section-appear');
+      sections.forEach(function(section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
